@@ -1,0 +1,24 @@
+html,
+body {
+  scrollbar-color: yellow #292A2E;
+  scrollbar-width: 3px;
+
+  scroll-behavior: smooth;
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Gravity_Falls_BillCipherCursor.png'), auto;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background: yellow; 
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+*:focus {
+  box-shadow: none!important;
+}
