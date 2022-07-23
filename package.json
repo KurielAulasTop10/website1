@@ -1,8 +1,11 @@
 {
   "name": "website",
   "version": "0.1.0",
+  "homepage": "https://kurielaulastop10.github.io/website1",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next -p 4015",
     "build": "next build",
     "postbuild": "next-sitemap",
@@ -14,6 +17,7 @@
     "@emotion/react": "11.9.3",
     "@emotion/styled": "11.9.3",
     "framer-motion": "6.3.16",
+    "gh-pages": "^4.0.0",
     "next": "12.2.0",
     "next-sitemap": "3.1.7",
     "react": "18.2.0",
