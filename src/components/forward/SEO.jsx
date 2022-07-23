@@ -7,9 +7,9 @@ import { makeUrl } from '../../utils/makeUrl'
 export function SEO ({
   url,
   children,
-  title = 'Resenha - Um simples servidor no Discord',
+  title = 'Banana Frita - As Melhores Bananas',
   image = '/favicon.png',
-  description = 'Um servidor amigável dentro do Discord, descubra mais!!'
+  description = 'As melhores bananas do mundo, saiba mais!'
 }) {
   const router = useRouter()
 
@@ -37,7 +37,7 @@ export function SEO ({
 
       <meta property='og:type' content='website' />
       <meta property='og:locale' content='pt_BR' />
-      <meta property='og:site_name' content='Resenha' />
+      <meta property='og:site_name' content='Banana Frita' />
 
       <meta property='og:title' content={title} />
       <meta property='og:url' content={canonical} />
