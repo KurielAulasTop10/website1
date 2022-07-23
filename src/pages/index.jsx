@@ -13,6 +13,8 @@ import {
   Box,
   SimpleGrid,
   Image,
+  Avatar,
+  HStack,
 } from "@chakra-ui/react";
 
 export default function Home() {
@@ -52,7 +54,11 @@ export default function Home() {
             </Text>
             <SimpleGrid columns={[2, null, 3]} p="5">
               <Box w="300px" ml="5">
-                <Tooltip label="banana da terra frita" placement="bottom">
+                <Tooltip
+                  label="banana da terra frita"
+                  closeDelay={700}
+                  placement="bottom"
+                >
                   <Image
                     src="https://img.itdg.com.br/tdg/images/recipes/000/183/205/243890/243890_original.jpg?mode=crop&width=300&height=200"
                     alt="banana da terra frita"
@@ -64,7 +70,11 @@ export default function Home() {
                 </Text>
               </Box>
               <Box w="300px" ml="5">
-                <Tooltip label="banana prata" placement="bottom">
+                <Tooltip
+                  label="banana prata"
+                  closeDelay={700}
+                  placement="bottom"
+                >
                   <Image
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAJGFqVQiQUVI5i2oIyQyPaAUp6uN3GK00NQ&usqp=CAU"
                     alt="sla"
@@ -76,17 +86,30 @@ export default function Home() {
                 </Text>
               </Box>
               <Box w="300px" ml="5">
-                <Tooltip label="banana nanica" placement="bottom">
+                <Tooltip
+                  label="banana nanica"
+                  closeDelay={700}
+                  placement="bottom"
+                >
                   <Image
                     src="https://ceagesp.gov.br/wp-content/uploads/2017/06/Banana-Nanica-28.9.2011-645-412x275.jpg"
                     alt="banana nanica"
                   />
                 </Tooltip>
                 <Text color="gray.200" textAlign="center">
-                  150,99€
+                  150,99€ ou R$:3000.000,00
                 </Text>
               </Box>
             </SimpleGrid>
+            <Box p="25" boxShadow="lg" bg="gray.700">
+              <HStack>
+                <Avatar mb="4" w="10" h="10" />{" "}
+                <Text color="gray.500" pb="15px"> Kaziel </Text>
+              </HStack>
+              <Text color="white">
+                Muito boa essas bananas, de qualidade incrível
+              </Text>
+            </Box>
           </Box>
         </Section>
         <Footer />
